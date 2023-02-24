@@ -1,0 +1,21 @@
+---
+import navData from "../data/NavData.js";
+interface props {
+    title: string;
+};
+const { title } = Astro.props;
+---
+<header>
+    <h1>
+        <a href="#" title= {title} class="logo" >Blog</a>
+    </h1>
+    <nav>
+        <ul>
+            { navData.forEach(element=>{
+                <li class="nav-item">
+                    <a href={element.path}>{element.name}</a>
+                </li>
+            })}
+        </ul>
+    </nav>
+</header>
