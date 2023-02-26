@@ -1,4 +1,4 @@
-const navData =[
+const navData =[ 
     {
         name: "Home",
         path: "/"
