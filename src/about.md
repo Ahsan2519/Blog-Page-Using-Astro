@@ -1,5 +1,5 @@
 ---
-layout: "/pages/about.astro"
+layout: "../components/markdownCom"
 ---
 
 !['About Image'](https://svmsolutions.b-cdn.net/wp-content/uploads/2020/01/converting-about-us-page.jpg) 
