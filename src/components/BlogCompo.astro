@@ -1,0 +1,26 @@
+---
+import frontMatter from "../data/BlogData";
+---
+
+<section class="blog-page">
+    <div class="wrapper">
+        <ul class="blog-list">
+            {
+                frontMatter.map((data) => (
+                    <li class="nav-item">
+                        <span>{data.number}</span>
+                        <figure>
+                            <img src={data.image} alt="Blog Image" />
+                        </figure>
+                        <div class="blog-content">
+                            <h3 class="author-heading">{data.AuthorName}</h3>
+                            <span>{data.date}</span>
+                            <p>{data.description}</p>
+                        </div>
+                        <a href={data.path}>Learn More</a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</section>
