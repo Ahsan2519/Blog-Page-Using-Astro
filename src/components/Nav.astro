@@ -6,12 +6,12 @@ interface props {
 const { title } = Astro.props;
 ---
 
-<header>
-    <h1>
+<header class="flex bg-zinc-700 text-white justify-between">
+    <h1 class="basis-[20%]">
         <a href="/" title={title} class="logo">Astro Blog</a>
     </h1>
-    <nav>
-        <ul>
+    <nav class="basis-[40%]">
+        <ul class=" flex flex-auto">
             {
                 navData.map((element) => (
                     <li class="nav-item">
