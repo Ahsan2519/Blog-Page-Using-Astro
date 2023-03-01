@@ -2,22 +2,22 @@
 import frontMatter from "../data/BlogData";
 ---
 
-<section class="blog-page">
-    <div class="wrapper">
-        <ul class="blog-list">
+<section class="py-[40px]">
+    <div class="w-5/6 mx-[auto]">
+        <ul class="flex flex-wrap justify-between">
             {
                 frontMatter.map((data) => (
-                    <li class="nav-item">
-                        <span>{data.number}</span>
-                        <figure>
-                            <img src={data.image} alt="Blog Image" />
+                    <li class="basis-[30%] mb-[70px]">
+                        <span class="flex text-[#080911] font-[600] pb-[10px] text-[25px]">{data.number}</span>
+                        <figure class="w-[100%] max-h-[250px] h-[100%]">
+                            <img src={data.image} alt="Blog Image" class = 'w-[100%] h-[100%]' />
                         </figure>
                         <div class="blog-content">
-                            <h3 class="author-heading">{data.AuthorName}</h3>
-                            <span>{data.date}</span>
-                            <p>{data.description}</p>
+                            <h3 class="text-[#777] font-[700] pb-[10px] text-[25px]">{data.AuthorName}</h3>
+                            <span class="text-[#777] font-[700] pb-[15px] text-[25px]">{data.date}</span>
+                            <p class="text-[#1c1c1c]  leading-8 tracking-wide pr-[3%] text-[20px] pb-[15px]">{data.description}</p>
                         </div>
-                        <a href={data.path}>Learn More</a>
+                        <a href={data.path} class="mx-[30%] block border text-center text-white font-[700] text-[20px] py-[4px] px-[4px] bg-[#000] rounded-lg hover:text-black hover:bg-white hover:border transition ease-in-out duration-300" title="Learn More">Learn More</a>
                     </li>
                 ))
             }
