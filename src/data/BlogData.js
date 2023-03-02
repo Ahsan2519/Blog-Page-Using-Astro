@@ -3,6 +3,7 @@ const date =  new Date().toLocaleDateString('on-india',{
     month:'long',
     day:'numeric'
 });
+
 const frontMatter = [
     {
         number:'Blog 1',
